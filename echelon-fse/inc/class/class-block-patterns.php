@@ -1,0 +1,159 @@
+<?php
+/**
+ * Block Pattern Class
+ *
+ * @author Jegstudio
+ * @package echelon-fse
+ */
+
+namespace Echelon_Fse;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+use WP_Block_Pattern_Categories_Registry;
+
+/**
+ * Init Class
+ *
+ * @package echelon-fse
+ */
+class Block_Patterns {
+
+	/**
+	 * Instance variable
+	 *
+	 * @var $instance
+	 */
+	private static $instance;
+
+	/**
+	 * Class instance.
+	 *
+	 * @return BlockPatterns
+	 */
+	public static function instance() {
+		if ( null === static::$instance ) {
+			static::$instance = new static();
+		}
+
+		return static::$instance;
+	}
+
+	/**
+	 * Class constructor.
+	 */
+	public function __construct() {
+		$this->register_block_patterns();
+		$this->register_synced_patterns();
+	}
+
+	/**
+	 * Register Block Patterns
+	 */
+	private function register_block_patterns() {
+		$block_pattern_categories = array(
+			'echelon-fse-core' => array( 'label' => __( 'Echelon FSE Core Patterns', 'echelon-fse' ) ),
+		);
+
+		if ( defined( 'GUTENVERSE' ) ) {
+			$block_pattern_categories['echelon-fse-gutenverse'] = array( 'label' => __( 'Echelon FSE Gutenverse Patterns', 'echelon-fse' ) );
+			$block_pattern_categories['echelon-fse-pro'] = array( 'label' => __( 'Echelon FSE Gutenverse PRO Patterns', 'echelon-fse' ) );
+		}
+
+		$block_pattern_categories = apply_filters( 'echelon-fse_block_pattern_categories', $block_pattern_categories );
+
+		foreach ( $block_pattern_categories as $name => $properties ) {
+			if ( ! WP_Block_Pattern_Categories_Registry::get_instance()->is_registered( $name ) ) {
+				register_block_pattern_category( $name, $properties );
+			}
+		}
+
+		$block_patterns = array(
+            'echelon-fse-core-footer',			'echelon-fse-core-header',			'echelon-fse-core-404-hero',			'echelon-fse-core-archive-hero',			'echelon-fse-core-front-page-hero',			'echelon-fse-core-front-page-feature',			'echelon-fse-core-front-page-logo-clients',			'echelon-fse-core-front-page-about',			'echelon-fse-core-front-page-service',			'echelon-fse-core-front-page-testimonials',			'echelon-fse-core-front-page-fun-fact',			'echelon-fse-core-front-page-cta',			'echelon-fse-core-front-page-article',			'echelon-fse-core-index-hero',			'echelon-fse-core-page-hero',			'echelon-fse-core-search-hero',			'echelon-fse-core-single-post-hero',
+		);
+
+		if ( defined( 'GUTENVERSE' ) ) {
+            $block_patterns[] = 'echelon-fse-gutenverse-footer';			$block_patterns[] = 'echelon-fse-gutenverse-header';			$block_patterns[] = 'echelon-fse-gutenverse-404-hero';			$block_patterns[] = 'echelon-fse-gutenverse-about-hero';			$block_patterns[] = 'echelon-fse-gutenverse-about-about';			$block_patterns[] = 'echelon-fse-gutenverse-about-vision-mission';			$block_patterns[] = 'echelon-fse-gutenverse-about-fun-fact';			$block_patterns[] = 'echelon-fse-gutenverse-about-team';			$block_patterns[] = 'echelon-fse-gutenverse-about-cta';			$block_patterns[] = 'echelon-fse-gutenverse-about-faq';			$block_patterns[] = 'echelon-fse-gutenverse-archive-hero';			$block_patterns[] = 'echelon-fse-gutenverse-blog-hero';			$block_patterns[] = 'echelon-fse-gutenverse-blog-post-block';			$block_patterns[] = 'echelon-fse-gutenverse-contact-hero';			$block_patterns[] = 'echelon-fse-gutenverse-contact-contact-info';			$block_patterns[] = 'echelon-fse-gutenverse-contact-contact';			$block_patterns[] = 'echelon-fse-gutenverse-faq-hero';			$block_patterns[] = 'echelon-fse-gutenverse-faq-faq';			$block_patterns[] = 'echelon-fse-gutenverse-faq-cta';			$block_patterns[] = 'echelon-fse-gutenverse-faq-article';			$block_patterns[] = 'echelon-fse-gutenverse-home-hero';			$block_patterns[] = 'echelon-fse-gutenverse-home-hero-2';			$block_patterns[] = 'echelon-fse-gutenverse-home-feature';			$block_patterns[] = 'echelon-fse-gutenverse-home-logo-slider';			$block_patterns[] = 'echelon-fse-gutenverse-home-progress-bar';			$block_patterns[] = 'echelon-fse-gutenverse-home-about';			$block_patterns[] = 'echelon-fse-gutenverse-home-service';			$block_patterns[] = 'echelon-fse-gutenverse-home-testimonial';			$block_patterns[] = 'echelon-fse-gutenverse-home-fun-fact';			$block_patterns[] = 'echelon-fse-gutenverse-home-cta';			$block_patterns[] = 'echelon-fse-gutenverse-home-article';			$block_patterns[] = 'echelon-fse-gutenverse-index-hero';			$block_patterns[] = 'echelon-fse-gutenverse-page-hero';			$block_patterns[] = 'echelon-fse-gutenverse-search-hero';			$block_patterns[] = 'echelon-fse-gutenverse-service-hero';			$block_patterns[] = 'echelon-fse-gutenverse-service-service';			$block_patterns[] = 'echelon-fse-gutenverse-service-appointment';			$block_patterns[] = 'echelon-fse-gutenverse-service-pricing';			$block_patterns[] = 'echelon-fse-gutenverse-single-post-hero';
+            
+		}
+
+		$block_patterns = apply_filters( 'echelon-fse_block_patterns', $block_patterns );
+		$pattern_list   = get_option( 'echelon-fse_synced_pattern_imported', false );
+		if ( ! $pattern_list ) {
+			$pattern_list = array();
+		}
+
+		if ( function_exists( 'register_block_pattern' ) ) {
+			foreach ( $block_patterns as $block_pattern ) {
+				$pattern_file = get_theme_file_path( '/inc/patterns/' . $block_pattern . '.php' );
+				$pattern_data = require $pattern_file;
+
+				if ( (bool) $pattern_data['is_sync'] ) {
+					$post = get_page_by_path( $block_pattern . '-synced', OBJECT, 'wp_block' );
+					if ( empty( $post ) ) {
+						/**Download Image */
+						$content = wp_slash( $pattern_data['content'] );
+						if ( $pattern_data['images'] ) {
+							$images = json_decode( $pattern_data['images'] );
+							foreach ( $images as $key => $image ) {
+								$url  = $image->image_url;
+								$data = Helper::check_image_exist( $url );
+								if ( ! $data ) {
+									$data = Helper::handle_file( $url );
+								}
+								$content = str_replace( $url, $data['url'], $content );
+								$image_id = $image->image_id;
+								if ( $image_id && 'null' !== $image_id ) {
+									$content = str_replace( '"imageId\":' . $image_id, '"imageId\":' . $data['id'], $content );
+								}
+							}
+						}
+						$post_id = wp_insert_post(
+							array(
+								'post_name'    => $block_pattern . '-synced',
+								'post_title'   => $pattern_data['title'],
+								'post_content' => $content,
+								'post_status'  => 'publish',
+								'post_author'  => 1,
+								'post_type'    => 'wp_block',
+							)
+						);
+						if ( ! is_wp_error( $post_id ) ) {
+							$pattern_category = $pattern_data['categories'];
+							foreach( $pattern_category as $category ){
+								wp_set_object_terms( $post_id, $category, 'wp_pattern_category' );
+							}
+						}
+						$pattern_data['content']  = '<!-- wp:block {"ref":' . $post_id . '} /-->';
+						$pattern_data['inserter'] = false;
+						$pattern_data['slug']     = $block_pattern;
+
+						$pattern_list[] = $pattern_data;
+					}
+				} else {
+					register_block_pattern(
+						'echelon-fse/' . $block_pattern,
+						require $pattern_file
+					);
+				}
+			}
+			update_option( 'echelon-fse_synced_pattern_imported', $pattern_list );
+		}
+	}
+
+	/**
+	 * Register Synced Patterns
+	 */
+	 private function register_synced_patterns() {
+		$patterns = get_option( 'echelon-fse_synced_pattern_imported' );
+
+		 foreach ( $patterns as $block_pattern ) {
+			 register_block_pattern(
+				'echelon-fse/' . $block_pattern['slug'],
+				$block_pattern
+			);
+		 }
+	 }
+}
