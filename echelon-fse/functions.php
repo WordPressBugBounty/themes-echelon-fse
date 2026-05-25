@@ -7,12 +7,14 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-    exit;
+	exit;
 }
 
-defined( 'ECHELON_FSE_VERSION' ) || define( 'ECHELON_FSE_VERSION', '1.1.1' );
+defined( 'ECHELON_FSE_VERSION' ) || define( 'ECHELON_FSE_VERSION', '1.2.0' );
 defined( 'ECHELON_FSE_DIR' ) || define( 'ECHELON_FSE_DIR', trailingslashit( get_template_directory() ) );
-defined( 'ECHELON_FSE_URI' ) || define( 'ECHELON_FSE_URI', trailingslashit( get_template_directory_uri() ) );
+
+defined( 'GUTENVERSE_COMPANION_REQUIRED_VERSION' ) || define( 'GUTENVERSE_COMPANION_REQUIRED_VERSION', '2.4.0' );
+defined( 'GUTENVERSE_LIBRARY_SERVER' ) || define( 'GUTENVERSE_LIBRARY_SERVER', 'https://gutenverse.com' );
 
 require get_parent_theme_file_path( 'inc/autoload.php' );
 

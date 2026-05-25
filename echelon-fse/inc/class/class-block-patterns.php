@@ -54,12 +54,12 @@ class Block_Patterns {
 	 */
 	private function register_block_patterns() {
 		$block_pattern_categories = array(
-			'echelon-fse-core' => array( 'label' => __( 'Echelon FSE Core Patterns', 'echelon-fse' ) ),
+			'echelon-fse-core' => array( 'label' => esc_html__( 'Echelon FSE Core Patterns', 'echelon-fse' ) ),
 		);
 
 		if ( defined( 'GUTENVERSE' ) ) {
-			$block_pattern_categories['echelon-fse-gutenverse'] = array( 'label' => __( 'Echelon FSE Gutenverse Patterns', 'echelon-fse' ) );
-			$block_pattern_categories['echelon-fse-pro'] = array( 'label' => __( 'Echelon FSE Gutenverse PRO Patterns', 'echelon-fse' ) );
+			$block_pattern_categories['echelon-fse-gutenverse'] = array( 'label' => esc_html__( 'Echelon FSE Gutenverse Patterns', 'echelon-fse' ) );
+			$block_pattern_categories['echelon-fse-pro'] = array( 'label' => esc_html__( 'Echelon FSE Gutenverse PRO Patterns', 'echelon-fse' ) );
 		}
 
 		$block_pattern_categories = apply_filters( 'echelon-fse_block_pattern_categories', $block_pattern_categories );
@@ -71,12 +71,46 @@ class Block_Patterns {
 		}
 
 		$block_patterns = array(
-            'echelon-fse-core-footer',			'echelon-fse-core-header',			'echelon-fse-core-404-hero',			'echelon-fse-core-archive-hero',			'echelon-fse-core-front-page-hero',			'echelon-fse-core-front-page-feature',			'echelon-fse-core-front-page-logo-clients',			'echelon-fse-core-front-page-about',			'echelon-fse-core-front-page-service',			'echelon-fse-core-front-page-testimonials',			'echelon-fse-core-front-page-fun-fact',			'echelon-fse-core-front-page-cta',			'echelon-fse-core-front-page-article',			'echelon-fse-core-index-hero',			'echelon-fse-core-page-hero',			'echelon-fse-core-search-hero',			'echelon-fse-core-single-post-hero',
+			'echelon-fse-core-footer',
+			'echelon-fse-core-header',
+			'echelon-fse-core-404-hero',
+			'echelon-fse-core-archive-hero',
+			'echelon-fse-core-index-hero',
+			'echelon-fse-core-page-hero',
+			'echelon-fse-core-search-hero',
+			'echelon-fse-core-single-post-hero',
+			'echelon-fse-core-front-page-hero',
+			'echelon-fse-core-front-page-feature',
+			'echelon-fse-core-front-page-logo-clients',
+			'echelon-fse-core-front-page-about',
+			'echelon-fse-core-front-page-service',
+			'echelon-fse-core-front-page-testimonials',
+			'echelon-fse-core-front-page-fun-fact',
+			'echelon-fse-core-front-page-cta',
+			'echelon-fse-core-front-page-article',
 		);
 
 		if ( defined( 'GUTENVERSE' ) ) {
-            $block_patterns[] = 'echelon-fse-gutenverse-footer';			$block_patterns[] = 'echelon-fse-gutenverse-header';			$block_patterns[] = 'echelon-fse-gutenverse-404-hero';			$block_patterns[] = 'echelon-fse-gutenverse-about-hero';			$block_patterns[] = 'echelon-fse-gutenverse-about-about';			$block_patterns[] = 'echelon-fse-gutenverse-about-vision-mission';			$block_patterns[] = 'echelon-fse-gutenverse-about-fun-fact';			$block_patterns[] = 'echelon-fse-gutenverse-about-team';			$block_patterns[] = 'echelon-fse-gutenverse-about-cta';			$block_patterns[] = 'echelon-fse-gutenverse-about-faq';			$block_patterns[] = 'echelon-fse-gutenverse-archive-hero';			$block_patterns[] = 'echelon-fse-gutenverse-blog-hero';			$block_patterns[] = 'echelon-fse-gutenverse-blog-post-block';			$block_patterns[] = 'echelon-fse-gutenverse-contact-hero';			$block_patterns[] = 'echelon-fse-gutenverse-contact-contact-info';			$block_patterns[] = 'echelon-fse-gutenverse-contact-contact';			$block_patterns[] = 'echelon-fse-gutenverse-faq-hero';			$block_patterns[] = 'echelon-fse-gutenverse-faq-faq';			$block_patterns[] = 'echelon-fse-gutenverse-faq-cta';			$block_patterns[] = 'echelon-fse-gutenverse-faq-article';			$block_patterns[] = 'echelon-fse-gutenverse-home-hero';			$block_patterns[] = 'echelon-fse-gutenverse-home-hero-2';			$block_patterns[] = 'echelon-fse-gutenverse-home-feature';			$block_patterns[] = 'echelon-fse-gutenverse-home-logo-slider';			$block_patterns[] = 'echelon-fse-gutenverse-home-progress-bar';			$block_patterns[] = 'echelon-fse-gutenverse-home-about';			$block_patterns[] = 'echelon-fse-gutenverse-home-service';			$block_patterns[] = 'echelon-fse-gutenverse-home-testimonial';			$block_patterns[] = 'echelon-fse-gutenverse-home-fun-fact';			$block_patterns[] = 'echelon-fse-gutenverse-home-cta';			$block_patterns[] = 'echelon-fse-gutenverse-home-article';			$block_patterns[] = 'echelon-fse-gutenverse-index-hero';			$block_patterns[] = 'echelon-fse-gutenverse-page-hero';			$block_patterns[] = 'echelon-fse-gutenverse-search-hero';			$block_patterns[] = 'echelon-fse-gutenverse-service-hero';			$block_patterns[] = 'echelon-fse-gutenverse-service-service';			$block_patterns[] = 'echelon-fse-gutenverse-service-appointment';			$block_patterns[] = 'echelon-fse-gutenverse-service-pricing';			$block_patterns[] = 'echelon-fse-gutenverse-single-post-hero';
-            
+			$block_patterns[] = 'echelon-fse-gutenverse-footer';
+			$block_patterns[] = 'echelon-fse-gutenverse-header';
+			$block_patterns[] = 'echelon-fse-gutenverse-404-hero';
+			$block_patterns[] = 'echelon-fse-gutenverse-archive-hero';
+			$block_patterns[] = 'echelon-fse-gutenverse-index-hero';
+			$block_patterns[] = 'echelon-fse-gutenverse-page-hero';
+			$block_patterns[] = 'echelon-fse-gutenverse-search-hero';
+			$block_patterns[] = 'echelon-fse-gutenverse-single-post-hero';
+			$block_patterns[] = 'echelon-fse-gutenverse-home-hero';
+			$block_patterns[] = 'echelon-fse-gutenverse-home-hero-2';
+			$block_patterns[] = 'echelon-fse-gutenverse-home-feature';
+			$block_patterns[] = 'echelon-fse-gutenverse-home-logo-slider';
+			$block_patterns[] = 'echelon-fse-gutenverse-home-progress-bar';
+			$block_patterns[] = 'echelon-fse-gutenverse-home-about';
+			$block_patterns[] = 'echelon-fse-gutenverse-home-service';
+			$block_patterns[] = 'echelon-fse-gutenverse-home-testimonial';
+			$block_patterns[] = 'echelon-fse-gutenverse-home-fun-fact';
+			$block_patterns[] = 'echelon-fse-gutenverse-home-cta';
+			$block_patterns[] = 'echelon-fse-gutenverse-home-article';
+			
 		}
 
 		$block_patterns = apply_filters( 'echelon-fse_block_patterns', $block_patterns );
@@ -85,6 +119,17 @@ class Block_Patterns {
 			$pattern_list = array();
 		}
 
+		$active_slug = get_stylesheet();
+		$inserted_content = get_option(
+			"gutenverse_{$active_slug}_content_inserted",
+			array(
+				'pages'    => array(),
+				'patterns' => array(),
+				'menus'    => array(),
+				'content_has_menus' => array(),
+			)
+		);
+
 		if ( function_exists( 'register_block_pattern' ) ) {
 			foreach ( $block_patterns as $block_pattern ) {
 				$pattern_file = get_theme_file_path( '/inc/patterns/' . $block_pattern . '.php' );
@@ -92,24 +137,58 @@ class Block_Patterns {
 
 				if ( (bool) $pattern_data['is_sync'] ) {
 					$post = get_page_by_path( $block_pattern . '-synced', OBJECT, 'wp_block' );
+					$post_id = $post ? $post->ID : null;
 					if ( empty( $post ) ) {
 						/**Download Image */
 						$content = wp_slash( $pattern_data['content'] );
-						if ( $pattern_data['images'] ) {
+						$image_importer_ver = $pattern_data['image_importer_ver'] ?? null;
+						if ( isset( $pattern_data['images'] ) && ! empty( $pattern_data['images'] ) ) {
 							$images = json_decode( $pattern_data['images'] );
-							foreach ( $images as $key => $image ) {
-								$url  = $image->image_url;
-								$data = Helper::check_image_exist( $url );
-								if ( ! $data ) {
-									$data = Helper::handle_file( $url );
+							if ( ! $image_importer_ver ) {
+								foreach ( $images as $key => $image ) {
+									$url  = $image->image_url;
+									$data = Helper::check_image_exist( $url );
+									if ( ! $data ) {
+										$data = Helper::handle_file( $url );
+									}
+									$content  = str_replace( $url, $data['url'], $content );
+									$image_id = $image->image_id;
+									if ( $image_id && 'null' !== $image_id ) {
+										$content = str_replace( '"imageId\":' . $image_id, '"imageId\":' . $data['id'], $content );
+									}
 								}
-								$content = str_replace( $url, $data['url'], $content );
-								$image_id = $image->image_id;
-								if ( $image_id && 'null' !== $image_id ) {
-									$content = str_replace( '"imageId\":' . $image_id, '"imageId\":' . $data['id'], $content );
+							} else {
+								foreach ( $images as $key => $image ) {
+									$url     = $key;
+									$pattern = $image->pattern;
+									$data    = Helper::check_image_exist( $url );
+									if ( ! $data ) {
+										$data = Helper::handle_file( $url );
+									}
+									foreach ( $pattern as $p ) {
+										$placeholder_arr        = explode( '|', trim( $p, '{}' ) );
+										$placeholder_value_type = end( $placeholder_arr );
+										switch ( $placeholder_value_type ) {
+											case 'url':
+												$placeholder_data_type = $placeholder_arr[1];
+												if ( 'case2' === $placeholder_data_type ) {
+													$placeholder_data_size = $placeholder_arr[3];
+													$target                = wp_get_attachment_image_url( $data['id'], $placeholder_data_size );
+												} else {
+													$target = wp_get_attachment_url( $data['id'] );
+												}
+												break;
+											case 'id':
+											default:
+												$target = $data['id'];
+												break;
+										}
+										$content = str_replace( $p, $target, $content );
+									}
 								}
 							}
 						}
+						$content = $this->decode_unicode_sequences($content);
 						$post_id = wp_insert_post(
 							array(
 								'post_name'    => $block_pattern . '-synced',
@@ -120,9 +199,16 @@ class Block_Patterns {
 								'post_type'    => 'wp_block',
 							)
 						);
+						if ( isset( $pattern_data['placeholder'] ) ) {
+							$inserted_content['patterns'][] = array(
+								'id' => $post_id,
+								'is_remapped' => false,
+								'placeholder' => ! empty( $pattern_data['placeholder'] ) ? $pattern_data['placeholder'] : '',
+							);
+						}
 						if ( ! is_wp_error( $post_id ) ) {
 							$pattern_category = $pattern_data['categories'];
-							foreach( $pattern_category as $category ){
+							foreach ( $pattern_category as $category ) {
 								wp_set_object_terms( $post_id, $category, 'wp_pattern_category' );
 							}
 						}
@@ -131,7 +217,19 @@ class Block_Patterns {
 						$pattern_data['slug']     = $block_pattern;
 
 						$pattern_list[] = $pattern_data;
+						/**Check if content has menu */
+						$normalized_content = wp_unslash( $content );
+						preg_match_all(
+							'/"menuId"\s*:\s*(?:"(\d+)"|(\d+))/',
+							$normalized_content,
+							$matches
+						);
+
+						if ( ! empty( array_filter( array_merge( $matches[1], $matches[2] ) ) ) ) {
+							$inserted_content['content_has_menus'][] = $post_id;
+						}
 					}
+					
 				} else {
 					register_block_pattern(
 						'echelon-fse/' . $block_pattern,
@@ -139,8 +237,43 @@ class Block_Patterns {
 					);
 				}
 			}
+			
 			update_option( 'echelon-fse_synced_pattern_imported', $pattern_list );
+			update_option(
+				"gutenverse_{$active_slug}_content_inserted",
+				$inserted_content
+			);
 		}
+	}
+
+	/**
+	 * Decode unicode sequences
+	 *
+	 * @param string $content .
+	 * @return string
+	 */
+	private function decode_unicode_sequences( $content ) {
+		return preg_replace_callback(
+			'/\\\\u([0-9a-fA-F]{4})/',
+			function ( $matches ) {
+
+				$hex = strtolower( $matches[1] );
+
+				// Always keep quotes escaped.
+				if ( '0022' === $hex ) {
+					return '\"';
+				}
+
+				$codepoint = hexdec( $hex );
+
+				return mb_convert_encoding(
+					pack( 'n', $codepoint ),
+					'UTF-8',
+					'UTF-16BE'
+				);
+			},
+			$content
+		);
 	}
 
 	/**

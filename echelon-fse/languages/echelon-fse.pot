@@ -1,0 +1,579 @@
+# Copyright (C) 2026 Jegstudio
+# This file is distributed under the GNU General Public License v3 or later..
+msgid ""
+msgstr ""
+"Project-Id-Version: Echelon FSE 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/echelon-fse-ZLGUrBsE0mNm\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-05-20T03:53:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: echelon-fse\n"
+
+#. Theme Name of the theme
+#: style.css
+#: inc/class/class-init.php:2139
+msgid "Echelon FSE"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://gutenverse.com/themes/echelon-fse/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+#: inc/class/class-init.php:2140
+msgid "Echelon FSE is a Corporate & Company Profile WordPress Block Theme designed for businesses that want to build a modern and professional online presence. Built with full site editing and powered by Gutenverse, this theme provides a flexible and clean platform to showcase company information, business services, and brand identity with a polished and well-structured layout. Whether you manage a startup, corporate business, or professional agency, Echelon FSE helps you present your company with clarity and credibility. It is ideal for corporate firms, consulting agencies, business services, marketing companies, and professional organizations looking to establish a strong digital presence. With responsive layouts, customizable block patterns, and organized page structures, you can easily highlight services, company achievements, team profiles, and client testimonials. Optimized for performance and usability, Echelon FSE enables you to create a reliable website that reflects your brand identity and expertise in Corporate & Company Profile services. If you are looking for a scalable and professional solution, Echelon FSE is a dependable Corporate & Company Profile WordPress theme to grow your business online."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Jegstudio"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://gutenverse.com"
+msgstr ""
+
+#: inc/class/class-block-patterns.php:57
+msgid "Echelon FSE Core Patterns"
+msgstr ""
+
+#: inc/class/class-block-patterns.php:61
+msgid "Echelon FSE Gutenverse Patterns"
+msgstr ""
+
+#: inc/class/class-block-patterns.php:62
+msgid "Echelon FSE Gutenverse PRO Patterns"
+msgstr ""
+
+#: inc/class/class-init.php:2141
+msgid "Plugin Requirement"
+msgstr ""
+
+#: inc/class/class-init.php:2142
+msgid "This theme require some plugins. Please make sure all the plugin below are installed and activated."
+msgstr ""
+
+#: inc/class/class-init.php:2148
+msgid "Install Gutenverse Plugin"
+msgstr ""
+
+#: inc/class/class-init.php:2149
+msgid "Activate Gutenverse Plugin"
+msgstr ""
+
+#: inc/class/class-init.php:2150
+msgid "Gutenverse Plugin Installed"
+msgstr ""
+
+#: inc/class/class-init.php:2164
+#: inc/class/class-plugin-notice.php:90
+msgid "Gutenverse"
+msgstr ""
+
+#: inc/class/class-init.php:2165
+#: inc/class/class-plugin-notice.php:91
+msgid "Gutenverse is a WordPress blocks plugin, page builder, and website builder for the native Block Editor and Site Editor. Create fast, responsive websites without code using 57 blocks, 600+ templates, global styles, responsive controls, popup builder tools, and block theme support."
+msgstr ""
+
+#: inc/class/class-init.php:2178
+#: inc/class/class-plugin-notice.php:104
+msgid "Gutenverse Form"
+msgstr ""
+
+#: inc/class/class-init.php:2179
+#: inc/class/class-plugin-notice.php:105
+msgid "Gutenverse Form is a WordPress form plugin, contact form builder, block form plugin, and booking form builder for the native Block Editor. Create contact forms, booking forms, reservation forms, subscribe forms, lead forms, feedback forms, and custom WordPress forms without code."
+msgstr ""
+
+#: inc/class/class-init.php:2191
+#: inc/class/class-plugin-notice.php:117
+msgid "Gutenverse Companion"
+msgstr ""
+
+#: inc/class/class-init.php:2192
+#: inc/class/class-plugin-notice.php:118
+msgid "A companion plugin designed specifically to enhance and extend the functionality of Gutenverse base themes. This plugin integrates seamlessly with the base themes, providing additional features, customization options, and advanced tools to optimize the overall user experience and streamline the development process."
+msgstr ""
+
+#: inc/class/class-init.php:2218
+msgid "Echelon PRO"
+msgstr ""
+
+#: inc/class/class-init.php:2281
+msgid "You don't have any demo activated"
+msgstr ""
+
+#: inc/class/class-init.php:2349
+#: inc/class/class-init.php:2351
+#: inc/class/class-init.php:2352
+msgid "unknown"
+msgstr ""
+
+#: inc/class/class-init.php:2354
+msgid "by"
+msgstr ""
+
+#: inc/class/class-init.php:2376
+#: inc/class/class-init.php:2377
+msgid "Echelon FSE Dashboard"
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:347
+msgid "Installing..."
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:387
+msgid "Install Failed, Try Again"
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:401
+msgid "Thank you For Installing Echelon FSE Theme"
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:403
+msgid "Unlock the full potential of your website with the recommended plugins."
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:405
+msgid "Activate it to explore exclusive extensions, ready-to-use demo templates, and powerful features that make building your site easier and more enjoyable."
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:409
+msgid "Install Recommended Plugins"
+msgstr ""
+
+#: inc/class/class-plugin-notice.php:413
+msgid "Don\\'t refresh the page when installing recommended plugins"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-404-hero.php:6
+msgid "Core 404 Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-archive-hero.php:6
+msgid "Core Archive Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-footer.php:6
+msgid "Core Footer"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-front-page-about.php:6
+msgid "Core Home About"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-front-page-article.php:6
+msgid "Core Home Article"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-front-page-cta.php:6
+msgid "Core Home CTA"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-front-page-feature.php:6
+msgid "Core Home Feature"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-front-page-fun-fact.php:6
+msgid "Core Home Fun Fact"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-front-page-hero.php:6
+msgid "Core Home Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-front-page-logo-clients.php:6
+msgid "Core Home Client Logo"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-front-page-service.php:6
+msgid "Core Home Service"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-front-page-testimonials.php:6
+msgid "Core Home Testimonials"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-header.php:6
+msgid "Core Header"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-index-hero.php:6
+msgid "Core Index Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-page-hero.php:6
+msgid "Core Page Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-search-hero.php:6
+msgid "Core Search Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-core-single-post-hero.php:6
+msgid "Core Single Post Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-404-hero.php:6
+msgid "Gutenverse 404 Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-archive-hero.php:6
+msgid "Gutenverse Archive Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-footer.php:6
+msgid "Gutenverse Footer"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-header.php:6
+msgid "Gutenverse Header"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-home-about.php:6
+msgid "Gutenverse Home About"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-home-article.php:6
+msgid "Gutenverse Home Article"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-home-cta.php:6
+msgid "Gutenverse Home CTA"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-home-feature.php:6
+msgid "Gutenverse Home Feature"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-home-fun-fact.php:6
+msgid "Gutenverse Fun Fact"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-home-hero-2.php:6
+msgid "Gutenverse Hero 2"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-home-hero.php:6
+msgid "Gutenverse Home Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-home-logo-slider.php:6
+msgid "Gutenverse Home Logo Slider"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-home-progress-bar.php:6
+msgid "Gutenverse Home Progress Bar"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-home-service.php:6
+msgid "Gutenverse Home Service"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-home-testimonial.php:6
+msgid "Gutenverse Home Testimonial"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-index-hero.php:6
+msgid "Gutenverse Index Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-page-hero.php:6
+msgid "Gutenverse Page Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-search-hero.php:6
+msgid "Gutenverse Search Hero"
+msgstr ""
+
+#: inc/patterns/echelon-fse-gutenverse-single-post-hero.php:6
+msgid "Gutenverse Single Post Hero"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blank canvas"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Full Width"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Gradient One"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Color 1"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Third (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Fourth (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Fifth (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Sixth (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Seventh (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Eighth (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ninth (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Tenth (Legacy)"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Text Placeholder"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Accent Hover"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Background Tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Border"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Border Input"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Text Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Text Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Text Placeholder"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Accent"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Accent Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Accent Tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Accent Hover"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Background Primary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Background Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Background Tertiary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Border"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Border Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Border Input"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Dark Secondary"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Black"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Lato"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Open Sans"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "XX LARGE"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "HEADING 1"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "HEADING 2"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "HEADING 3"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "HEADING 4"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "HEADING 5"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "HEADING 6"
+msgstr ""

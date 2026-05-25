@@ -1,19 +1,18 @@
 === Echelon FSE ===
 Contributors: Jegstudio
-Requires at least: 6.2
-Tested up to: 6.6
-Requires PHP: 7.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Requires at least: 6.5
+Tested up to: 6.9
+Requires PHP: 7.4
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
 
-Echelon FSE is a modern and responsive style theme template for WordPress fullsite editing and fully compatible with Gutenverse plugin. Echelon FSE created especially for Corporate, Company Profile, Business Agency, Consulting, and all other Business websites. The templates includes both core version and Gutenverse plugin version, also has core and Gutenverse block patterns ready so you can start mix and match your template parts as you desire. The templates is built ready so you don't need to build it from scratch. We want to make your experience using WordPress fullsite editor more convenient.
-
+Echelon FSE is a Corporate & Company Profile WordPress Block Theme designed for businesses that want to build a modern and professional online presence. Built with full site editing and powered by Gutenverse, this theme provides a flexible and clean platform to showcase company information, business services, and brand identity with a polished and well-structured layout. Whether you manage a startup, corporate business, or professional agency, Echelon FSE helps you present your company with clarity and credibility. It is ideal for corporate firms, consulting agencies, business services, marketing companies, and professional organizations looking to establish a strong digital presence. With responsive layouts, customizable block patterns, and organized page structures, you can easily highlight services, company achievements, team profiles, and client testimonials. Optimized for performance and usability, Echelon FSE enables you to create a reliable website that reflects your brand identity and expertise in Corporate & Company Profile services. If you are looking for a scalable and professional solution, Echelon FSE is a dependable Corporate & Company Profile WordPress theme to grow your business online.
 
 == Copyright ==
 
-Echelon FSE, 2025 Jegstudio
+Echelon FSE, 2026 Jegstudio
 Echelon FSE is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
@@ -26,16 +25,33 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-Self designed images under theme directory :
-/assets/img/Logo-Echelon.webp
-/assets/img/Logo-Echelon-White.webp
-/assets/img/client-logo-1.webp
-/assets/img/client-logo-2.webp
-/assets/img/client-logo-3.webp
-/assets/img/client-logo-4.webp
-/assets/img/client-logo-5.webp
-Declaring these self designed images under GPL license version 2.0 =
-License URL: http://www.gnu.org/licenses/gpl-2.0.html
+Self designed images,
+* Logo 1 : echelon-fse/assets/img/Logo-Echelon.webp
+* Logo 2 : echelon-fse/assets/img/Logo-Echelon-White.webp
+* Logo 3 : echelon-fse/assets/img/client-logo-1.webp
+* Logo 4 : echelon-fse/assets/img/client-logo-2.webp
+* Logo 5 : echelon-fse/assets/img/client-logo-3.webp
+* Logo 6 : echelon-fse/assets/img/client-logo-4.webp
+* Logo 7 : echelon-fse/assets/img/client-logo-5.webp
+* Image 1 : echelon-fse/assets/img/icon-comparison.png
+* Image 2 : echelon-fse/assets/img/icon-docs.png
+* Image 3 : echelon-fse/assets/img/icon-plugin.png
+* Image 4 : echelon-fse/assets/img/ss-cover-echelon-pro-home.webp
+
+Declaring these self designed images under GPL license version 3.0 =
+License URL: http://www.gnu.org/licenses/gpl-3.0.html
+
+Google Web Fonts (Open Sans) By Google - https://google.com
+Copyright 2020 The Open Sans Project Authors (https://github.com/googlefonts/opensans)
+License: This Font Software is licensed under the SIL Open Font License, Version 1.1. 
+License URL: https://openfontlicense.org/
+Source: https://fonts.google.com/specimen/Open+Sans
+
+Google Web Fonts (Lato) By Google - https://google.com
+Copyright (c) 2010-2014 by tyPoland Lukasz Dziedzic (team@latofonts.com) with Reserved Font Name "Lato"
+License: This Font Software is licensed under the SIL Open Font License, Version 1.1. 
+License URL: https://openfontlicense.org/
+Source: https://fonts.google.com/specimen/Lato
 
 Image for theme screenshot & pattern, Credit mdburnette
 License: CC0 1.0 Universal (CC0 1.0)
@@ -154,33 +170,38 @@ License URL: https://github.com/WPTT/webfont-loader/blob/master/LICENSE
 
 == Changelog ==
 
-= 1.1.1 - 2025-03-27 =
+= 1.2.0 =
+* Update theme dashboard
+* Remove unused gutenverse templates
+* Improved: Overall performance and SEO optimization
+
+= 1.1.1 =
 * Fix error on site editor
 
-= 1.1.0 - 2024-08-27 =
+= 1.1.0 =
 * Update template core
 * Update template Gutenverse
 
-= 1.0.5 - 2024-05-17 =
+= 1.0.5 =
 * Update Gutenverse template path
 * Remove unused core templates
 
-= 1.0.4 - 2024-03-21 =
+= 1.0.4 =
 * Update notice design
 
- 1.0.3 - 2024-01-31 =
+ 1.0.3 =
 * Update Ajax
 
-= 1.0.2 - 2023-07-11 =
+= 1.0.2 =
 * Update theme dashboard
 * Fix post content inherit layout
 * Improve the loading of font assets.
 * Fix core templates for WordPress version below 6.1
 
-= 1.0.1 - 2022-12-01 =
+= 1.0.1 =
 * Remove google map iframe from template
 * Add license for included codes
 * Fix js variables
 
-= 1.0.0 - 2022-11-23 =
+= 1.0.0 =
 * Initial release
